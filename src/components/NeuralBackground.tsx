@@ -64,9 +64,9 @@ export function NeuralBackground() {
 
       ctx.clearRect(0, 0, w, h);
 
-      const nodeColor = isDark ? "138, 43, 226" : "75, 0, 130";
-      const lineColor = isDark ? "138, 43, 226" : "100, 20, 200";
-      const cursorLineColor = isDark ? "160, 80, 255" : "120, 40, 220";
+      const nodeColor = isDark ? "138, 43, 226" : "100, 40, 180";
+      const lineColor = isDark ? "120, 30, 200" : "110, 40, 190";
+      const cursorLineColor = isDark ? "140, 60, 220" : "120, 50, 200";
 
       const nodes = nodesRef.current;
       const mouse = mouseRef.current;
@@ -104,7 +104,7 @@ export function NeuralBackground() {
           const dy = nodes[i].y - nodes[j].y;
           const dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < CONNECTION_DIST) {
-            const alpha = (1 - dist / CONNECTION_DIST) * (isDark ? 0.35 : 0.2);
+            const alpha = (1 - dist / CONNECTION_DIST) * (isDark ? 0.18 : 0.09);
             ctx.beginPath();
             ctx.strokeStyle = `rgba(${lineColor}, ${alpha})`;
             ctx.lineWidth = 0.8;
@@ -121,7 +121,7 @@ export function NeuralBackground() {
         const dy = n.y - mouse.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < CURSOR_CONNECT_DIST) {
-          const alpha = (1 - dist / CURSOR_CONNECT_DIST) * (isDark ? 0.6 : 0.45);
+          const alpha = (1 - dist / CURSOR_CONNECT_DIST) * (isDark ? 0.35 : 0.2);
           ctx.beginPath();
           ctx.strokeStyle = `rgba(${cursorLineColor}, ${alpha})`;
           ctx.lineWidth = 1;
@@ -134,18 +134,18 @@ export function NeuralBackground() {
       // draw nodes
       for (const n of nodes) {
         // glow
-        const grd = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.radius * (isDark ? 5 : 4));
-        grd.addColorStop(0, `rgba(${nodeColor}, ${isDark ? 0.8 : 0.7})`);
+        const grd = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.radius * (isDark ? 4 : 3));
+        grd.addColorStop(0, `rgba(${nodeColor}, ${isDark ? 0.35 : 0.18})`);
         grd.addColorStop(1, `rgba(${nodeColor}, 0)`);
 
         ctx.beginPath();
-        ctx.arc(n.x, n.y, n.radius * (isDark ? 5 : 4), 0, Math.PI * 2);
+        ctx.arc(n.x, n.y, n.radius * (isDark ? 4 : 3), 0, Math.PI * 2);
         ctx.fillStyle = grd;
         ctx.fill();
 
         ctx.beginPath();
         ctx.arc(n.x, n.y, n.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(${nodeColor}, ${isDark ? 0.9 : 0.7})`;
+        ctx.fillStyle = `rgba(${nodeColor}, ${isDark ? 0.45 : 0.25})`;
         ctx.fill();
       }
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Github, Linkedin, Send, Mail } from "lucide-react";
+import { Github, Linkedin, Send, Mail, Phone } from "lucide-react";
 
 export function Footer() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -11,7 +11,7 @@ export function Footer() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Opens default mail client as fallback
-    window.location.href = `mailto:aryan@example.com?subject=Portfolio Contact - ${form.name}&body=${encodeURIComponent(form.message)}`;
+    window.location.href = `mailto:Aryandhawan2802@gmail.com?subject=Portfolio Contact - ${form.name}&body=${encodeURIComponent(form.message)}`;
     setSent(true);
   };
 
@@ -44,11 +44,20 @@ export function Footer() {
 
             {/* Direct email */}
             <a
-              href="mailto:aryan@example.com"
-              className="inline-flex items-center gap-2.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-200 mb-8"
+              href="mailto:Aryandhawan2802@gmail.com"
+              className="inline-flex items-center gap-2.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-200 mb-4"
             >
               <Mail className="w-4 h-4" />
-              aryan@example.com
+              Aryandhawan2802@gmail.com
+            </a>
+
+            {/* Phone */}
+            <a
+              href="tel:+917359563504"
+              className="inline-flex items-center gap-2.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-200 mb-8"
+            >
+              <Phone className="w-4 h-4" />
+              +91 73595 63504
             </a>
 
             {/* Social */}
@@ -145,7 +154,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-20 pt-8 border-t border-border/40 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Aryan Dhawan. Built with curiosity & first principles.
+          © {new Date().getFullYear()} Aryan Dhawan. Built with curiosity & first principles.
           </p>
           <p
             className="text-xs font-semibold"
