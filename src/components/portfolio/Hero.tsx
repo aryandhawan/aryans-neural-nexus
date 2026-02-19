@@ -72,12 +72,12 @@ export function Hero() {
             <span className="text-sm font-medium hidden sm:block">LinkedIn</span>
           </a>
         </div>
-      </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-float opacity-60">
-        <span className="text-xs text-muted-foreground tracking-widest uppercase">Scroll</span>
-        <ArrowDown className="w-4 h-4 text-muted-foreground" />
+        {/* Scroll indicator — sits between socials and the next section */}
+        <div className="flex flex-col items-center gap-2 mt-12 animate-float opacity-60">
+          <span className="text-xs text-muted-foreground tracking-widest uppercase">Scroll</span>
+          <ArrowDown className="w-4 h-4 text-muted-foreground" />
+        </div>
       </div>
     </section>
   );
