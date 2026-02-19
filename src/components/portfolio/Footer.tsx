@@ -13,6 +13,11 @@ export function Footer() {
     // Opens default mail client as fallback
     window.location.href = `mailto:Aryandhawan2802@gmail.com?subject=Portfolio Contact - ${form.name}&body=${encodeURIComponent(form.message)}`;
     setSent(true);
+    // Auto-reset form after 4 seconds
+    setTimeout(() => {
+      setSent(false);
+      setForm({ name: "", email: "", message: "" });
+    }, 4000);
   };
 
   return (
