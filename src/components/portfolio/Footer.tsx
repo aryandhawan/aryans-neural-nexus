@@ -42,23 +42,23 @@ export function Footer() {
               my inbox is always open.
             </p>
 
-            {/* Direct email */}
-            <a
-              href="mailto:Aryandhawan2802@gmail.com"
-              className="inline-flex items-center gap-2.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-200 mb-4"
-            >
-              <Mail className="w-4 h-4" />
-              Aryandhawan2802@gmail.com
-            </a>
-
-            {/* Phone */}
-            <a
-              href="tel:+917359563504"
-              className="inline-flex items-center gap-2.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-200 mb-8"
-            >
-              <Phone className="w-4 h-4" />
-              +91 73595 63504
-            </a>
+            {/* Contact details */}
+            <div className="flex flex-col gap-3 mb-8">
+              <a
+                href="mailto:Aryandhawan2802@gmail.com"
+                className="inline-flex items-center gap-2.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-200"
+              >
+                <Mail className="w-4 h-4 shrink-0" />
+                Aryandhawan2802@gmail.com
+              </a>
+              <a
+                href="tel:+917359563504"
+                className="inline-flex items-center gap-2.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-200"
+              >
+                <Phone className="w-4 h-4 shrink-0" />
+                +91 73595 63504
+              </a>
+            </div>
 
             {/* Social */}
             <div className="flex gap-4">
