@@ -20,7 +20,7 @@ export function Hero() {
             backgroundClip: "text",
           }}
         >
-          Aryan.
+          Aryan Dhawan.
         </h1>
 
         {/* Sub-headline */}
