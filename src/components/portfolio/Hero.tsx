@@ -25,9 +25,9 @@ export function Hero() {
 
         {/* Sub-headline */}
         <p className="text-[clamp(1rem,2.5vw,1.35rem)] font-light text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10 animate-fade-up opacity-0 [animation-delay:0.35s]">
-          Building AI from the ground up.{" "}
-          <span className="text-foreground font-medium">Deep Learning Engineer</span> &{" "}
-          <span className="text-foreground font-medium">Data Scientist.</span>
+          Engineering AI beyond the import statement. Specializing in{" "}
+          <span className="text-foreground font-medium">ML, Deep Learning,</span> and{" "}
+          <span className="text-foreground font-medium">Large Language Models.</span>
         </p>
 
         {/* CTAs */}
