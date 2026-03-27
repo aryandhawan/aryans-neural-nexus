@@ -12,7 +12,7 @@ export function Hero() {
 
         {/* Main headline */}
         <h1
-          className="text-[clamp(4rem,14vw,9rem)] font-black leading-none tracking-tighter mb-4 animate-fade-up opacity-0 [animation-delay:0.2s]"
+          className="text-[clamp(2.5rem,10vw,5.5rem)] font-black leading-none tracking-tighter mb-4 animate-fade-up opacity-0 [animation-delay:0.2s]"
           style={{
             background: "var(--gradient-hero-text)",
             WebkitBackgroundClip: "text",
@@ -20,14 +20,15 @@ export function Hero() {
             backgroundClip: "text",
           }}
         >
-          Aryan Dhawan.
+          Founder & AI Systems Architect.
         </h1>
 
         {/* Sub-headline */}
         <p className="text-[clamp(1rem,2.5vw,1.35rem)] font-light text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10 animate-fade-up opacity-0 [animation-delay:0.35s]">
-          Engineering AI beyond the import statement. Specializing in{" "}
-          <span className="text-foreground font-medium">ML, Deep Learning,</span> and{" "}
-          <span className="text-foreground font-medium">Large Language Models.</span>
+          Engineering{" "}
+          <span className="text-foreground font-medium">Autonomous Agentic Workflows</span> and{" "}
+          <span className="text-foreground font-medium">Production-Grade ML Infrastructure.</span>{" "}
+          I build custom AI solutions that automate complex business logic.
         </p>
 
         {/* CTAs */}
@@ -37,13 +38,13 @@ export function Hero() {
             className="px-8 py-3.5 rounded-full font-semibold text-sm text-white transition-all duration-300 hover:scale-105 hover:shadow-purple-glow-lg"
             style={{ background: "var(--gradient-purple)" }}
           >
-            View Projects
+            View SaaS Tools
           </a>
           <a
             href="#contact"
             className="px-8 py-3.5 rounded-full font-semibold text-sm border border-primary/60 text-primary bg-transparent hover:bg-primary/10 hover:border-primary hover:shadow-purple-glow-sm transition-all duration-300 hover:scale-105"
           >
-            Hire Me / Contact
+            Request a Solution
           </a>
         </div>
 
@@ -73,7 +74,7 @@ export function Hero() {
           </a>
         </div>
 
-        {/* Scroll indicator — sits between socials and the next section */}
+        {/* Scroll indicator */}
         <div className="flex flex-col items-center gap-2 mt-12 animate-float opacity-60">
           <span className="text-xs text-muted-foreground tracking-widest uppercase">Scroll</span>
           <ArrowDown className="w-4 h-4 text-muted-foreground" />

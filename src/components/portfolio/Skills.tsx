@@ -1,23 +1,23 @@
 const skillGroups = [
   {
-    category: "Machine & Deep Learning",
+    category: "AI & Agentic Systems",
     icon: "🧠",
-    skills: ["PyTorch", "TensorFlow", "Keras", "Scikit-Learn"],
+    skills: ["PyTorch", "LangGraph", "CrewAI", "Hugging Face", "LangChain"],
   },
   {
-    category: "Data Science & Analytics",
+    category: "MLOps & Data Lineage",
     icon: "📊",
-    skills: ["Pandas", "NumPy", "Matplotlib", "Seaborn"],
+    skills: ["DagsHub", "MLflow", "DVC", "Apache Airflow"],
   },
   {
-    category: "Backend & Deployment",
+    category: "Infrastructure & Cloud",
+    icon: "☁️",
+    skills: ["AWS", "Azure", "Docker", "Linux"],
+  },
+  {
+    category: "Backend Architecture",
     icon: "⚡",
-    skills: ["FastAPI", "Flask", "Streamlit", "Joblib"],
-  },
-  {
-    category: "Data Engineering & Extraction",
-    icon: "🕸️",
-    skills: ["BeautifulSoup (BS4)", "Selenium"],
+    skills: ["FastAPI", "PostgreSQL", "Redis", "Streamlit"],
   },
 ];
 
@@ -61,7 +61,7 @@ export function Skills() {
                 {group.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-4 py-1.5 rounded-full text-xs font-semibold border border-primary/30 bg-primary/8 text-primary cursor-default transition-all duration-200 hover:border-primary/70 hover:bg-primary/15 hover:shadow-purple-glow-sm hover:scale-105"
+                    className="px-4 py-1.5 rounded-full text-xs font-semibold border border-primary/30 text-primary cursor-default transition-all duration-200 hover:border-primary/70 hover:bg-primary/15 hover:shadow-purple-glow-sm hover:scale-105"
                     style={{ backgroundColor: "hsl(var(--primary) / 0.08)" }}
                   >
                     {skill}

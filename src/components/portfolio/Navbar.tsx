@@ -47,6 +47,10 @@ export function Navbar() {
 
         {/* Right icons */}
         <div className="flex items-center gap-3">
+          <span className="hidden lg:inline-flex items-center gap-1.5 text-[11px] font-medium text-primary/80 mr-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-primary animate-glow-pulse" />
+            Deploying SaaS Solutions
+          </span>
           <a
             href="https://github.com/aryandhawan"
             target="_blank"
