@@ -20,7 +20,7 @@ export function Hero() {
             backgroundClip: "text",
           }}
         >
-          Founder & AI Systems Architect.
+          Aryan Dhawan.
         </h1>
 
         {/* Sub-headline */}
