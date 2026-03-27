@@ -170,7 +170,7 @@ export function Footer() {
               backgroundClip: "text",
             }}
           >
-            AI / ML Engineer · Data Scientist
+            Founder · AI Systems Architect
           </p>
         </div>
       </div>

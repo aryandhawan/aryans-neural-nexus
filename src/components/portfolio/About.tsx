@@ -42,16 +42,10 @@ export function About() {
             </span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6">
-            I don't just import libraries; I understand the math and logic beneath them. My passion
-            for the AI/ML industry is driven by a deep curiosity to break down complex architectures
-            and rebuild them.
-          </p>
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            I write code to{" "}
-            <span className="text-foreground font-medium">learn</span>,{" "}
-            <span className="text-foreground font-medium">to optimize</span>, and to{" "}
-            <span className="text-foreground font-medium">solve real-world problems</span> from the
-            ground up.
+            I don't just import libraries; I architect systems. As a Founder, I bridge the gap
+            between deep research and commercial viability. From automating intricate workflows to
+            deploying scalable ML pipelines, I rebuild complex architectures from the ground up to
+            solve real-world problems with engineering rigor.
           </p>
 
           {/* Stats row */}

@@ -3,20 +3,20 @@ import { ExternalLink } from "lucide-react";
 const projects = [
   {
     title: "Versa AI",
-    badge: "Featured",
-    tags: ["PyTorch", "FastAPI", "NLP", "ML Backend"],
+    badge: "Flagship SaaS",
+    tags: ["PyTorch", "FastAPI", "NLP", "Agentic Architecture"],
     description:
-      "Versa AI brings the future of dynamic human-computer interaction into the palm of your hand. Engineered from first principles, this architecture seamlessly transitions between distinct, highly defined AI personalities in real-time without losing contextual awareness. Powered by an optimized ML backend, it moves beyond rigid, single-track chatbots to deliver a fluid, hyper-personalized cognitive engine.",
+      "An advanced cognitive engine designed for dynamic human-computer interaction. Engineered as a scalable SaaS architecture that manages real-time state transitions and multi-persona contextual awareness.",
     emoji: "🤖",
     gradient: "from-purple-700 via-purple-500 to-purple-800",
   },
   {
-    title: "Predictive Analytics Suite",
-    badge: "Data Science",
-    tags: ["Scikit-Learn", "Pandas", "XGBoost", "Streamlit"],
+    title: "Custom SaaS Automations",
+    badge: "Automation",
+    tags: ["LangGraph", "CrewAI", "Docker", "PostgreSQL"],
     description:
-      "End-to-end machine learning models including Customer Churn prediction, Titanic Survival classification, and Loan Approval predictors. Each model is carefully engineered with feature selection, hyperparameter tuning, and full deployment pipelines.",
-    emoji: "📈",
+      "Architecting bespoke AI trackers and autonomous SaaS tools. High-efficiency, isolated AI engines that automate end-to-end business logic with zero-human intervention, focusing on reproducibility and data integrity.",
+    emoji: "⚙️",
     gradient: "from-purple-900 via-purple-700 to-purple-600",
   },
   {
@@ -40,7 +40,7 @@ export function Projects() {
             Work
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            The{" "}
+            SaaS Products{" "}
             <span
               style={{
                 background: "var(--gradient-hero-text)",
@@ -49,11 +49,11 @@ export function Projects() {
                 backgroundClip: "text",
               }}
             >
-              Toy Box.
+              & Systems.
             </span>
           </h2>
           <p className="text-muted-foreground mt-3 max-w-md mx-auto text-sm">
-            Projects built from scratch. Every line written to understand, not just to ship.
+            Production-grade systems built for commercial viability. Every architecture designed to scale.
           </p>
         </div>
 
