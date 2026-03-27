@@ -12,7 +12,7 @@ export function Hero() {
 
         {/* Main headline */}
         <h1
-          className="text-[clamp(2.5rem,10vw,5.5rem)] font-black leading-none tracking-tighter mb-4 animate-fade-up opacity-0 [animation-delay:0.2s]"
+          className="text-[clamp(4rem,14vw,9rem)] font-black leading-none tracking-tighter mb-4 animate-fade-up opacity-0 [animation-delay:0.2s]"
           style={{
             background: "var(--gradient-hero-text)",
             WebkitBackgroundClip: "text",
@@ -20,7 +20,7 @@ export function Hero() {
             backgroundClip: "text",
           }}
         >
-          Founder & AI Systems Architect.
+          Aryan Dhawan.
         </h1>
 
         {/* Sub-headline */}
